@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Loan</title>
+
+	<!-- ===================BS5-cdn======================= -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	<!-- ===================fonawesome-cdn======================= -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- ===================google font======================= -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap" rel="stylesheet">
+
+	<!-- ===================style-sheet======================= -->
+	<link rel="stylesheet" href="style.css">
+
+</head>
+	<body>
+		
+		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+			<div class="container-fluid my-container">
+			  <a class="navbar-brand" href="index.html"><img src="img/home/logo.png" alt=""></a>
+
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mx-auto my-2 my-md-0 mb-lg-0 navmenu">
+
+						<li class="active" ><a href="#">Home <span><i class="fas fa-chevron-down my-3 my-md-0"></i></span></a>
+							<ul class="home-dd shadow">
+								<li><a href="Home1.html">Home One</a></li>
+								<li><a href="index.html">Home Two</a></li>
+								<li><a href="Home3.html">Home Three</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#">Pages <span><i class="fas fa-chevron-down my-3 my-md-0"></i></span></a>
+							<ul class="page-dd shadow">
+								<li><a href="about.html">About</a></li>
+								<li><a href="Team.html">Team</a></li>
+								<li><a href="Faq.html">Faq</a></li>
+								<li><a href="Gallery.html">Gallery</a></li>
+								<li><a href="Loan-Calculator.html">Loan Calculator</a></li>
+								<li><a href="Apply-Now.html">Apply Now</a></li>
+								<li><a href="Testimonials.html">Testimonials</a></li>
+								<li><a href="Projects.html">Projects<span><i class="fas fa-chevron-down ms-5 my-3 my-md-0"></i></span></a>
+									
+									<ul class="project-dd2">
+										<li><a href="Projects.html">Projects</a></li>
+										<li><a href="Projects-Details.html">Projects Details</a></li>
+									</ul>
+
+								</li>
+								<li><a href="Sign In.html">Sign In</a></li>
+								<li><a href="Sign Up.html">Sign Up</a></li>
+								<li><a href="Terms-&-Condition.html">Terms & Condition</a></li>
+								<li><a href="Privecy-Policy.html">Privecy Policy</a></li>
+								<li><a href="Error-Page.html">Error Page</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#">Services <span><i class="fas fa-chevron-down my-3 my-md-0"></i></span></a>
+							<ul class="services-dd shadow">
+								<li><a href="services.html">services</a></li>
+								<li><a href="services Details.html">services Details</a></li>
+							</ul>
+						</li>
+
+						<li class="my-3 my-md-0" ><a href="funding.html">Funding</a></li>
+						<li class="my-3 my-md-0" ><a href="loan.html">Loan</a></li>
+						<li><a href="#">News <span><i class="fas fa-chevron-down my-3 my-md-0"></i></span></a>
+							<ul class="news-dd shadow">
+								<li><a href="News.html">News</a></li>
+								<li><a href="News Details.html">News Details</a></li>
+							</ul>
+						</li>
+
+						<li class="my-3 my-md-0" ><a href="contact.html">Contact</a></li>
+
+					</ul>
+
+					<div class=" nav-right d-flex align-items-center">
+						<div class="nav-contact d-flex">
+							<div class="nav-search d-flex align-items-center">
+								<span><i class="fas fa-search"></i></span>
+							</div>
+
+							<div class="phone d-flex ms-3 me-4 align-items-center">
+								<div class="phone-icon me-3">
+									<span><i class="fas fa-phone-alt"></i></span>
+								</div>
+								<div class="call-now">
+									<p>Call Now</p>
+									<a href="tel:+1 (514) 312-5678">+1 (514) 312-5678</a>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-danger my-button" type="submit">Apply Now</button>
+					</div>
+			  </div>
+				
+			</div>
+		  </nav>
+
+
+<!-- ====================================== breadcrumb-section =========================================== -->
+		  <section class="breadcrumb-section loan-breadcrumb">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="contact-breadcrumb">
+							  <nav aria-label="breadcrumb">
+								  <h2 class="text-center">Loans</h2>
+								<ol class="breadcrumb justify-content-center">
+								  <li class="breadcrumb-item"><a href="Home1.html">Home</a></li>
+								  <li class="breadcrumb-item active" aria-current="page">Loans</li>
+								</ol>
+							  </nav>
+							</div> 
+						</div>
+					</div>
+				</div>
+		  </section>
+
+<!-- ====================================== what is finix-section =========================================== -->
+
+		  <section class="what-section py-5 my-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 mb-5">
+							<div class="what-left">
+								<div class="photo">
+									<img class="img-fluid" src="img/loan/what-finix.png" alt="photo">
+								
+									<div class="round-part">
+										<img class="img-fluid" src="img/loan/shape.png" alt="shape">
+										<div class="round-logo">
+											<img class="img-fluid" src="img/loan/finix-loan-logo.png" alt="shape">
+											<p>We believe in those <br> made to do more</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="what-right">
+								<h2>What is a finix loan?</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Quis ipsum suspendisse ultrices gravida</p>
+
+								<ul class="ul-one">
+									<li><p>Unsecured loans of between $500 - $5,000</p></li>
+									<li><p>Borrow over 1-5 years at a fixed interest rate of 6%</p></li>
+									<li><p>FREE mentoring for the first year of the loan</p></li>
+									<li><p>No minimum trading requirement.</p></li>
+								</ul>
+								<h3>Resources to help you with your Loan</h3>
+
+								<ul class="ul-two">
+									<li><p><span><i class="fas fa-check"></i></span>Business Plan</p></li>
+									<li><p><span><i class="fas fa-check"></i></span>Budget Planner</p></li>
+									<li><p><span><i class="fas fa-check"></i></span>Cashflow Forecast</p></li>
+								</ul>
+								<div class="what-button">
+									<a class="btn btn-danger my-button" href="#">Apply Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		  </section>
+
+<!-- ====================================== process-section =========================================== -->	
+
+		  <section class="process-section py-5 my4 ash-bg">
+			  <div class="container">
+				  <div class="common-heading text-center">
+					  <h5>What’s the process?</h5>
+					  <h2 class="fw-bold">The Loans have helped us move <br> our business forward</h2>
+				  </div>
+
+				  <div class="row mt-5">
+					  <div class="col-lg-4">
+						  <div class="process-one text-center">
+							  <h2>1</h2>
+							  <h4>Apply</h4>
+							  <h3>Easily apply in
+								<br> minutes</h3>
+								<div class="shape">
+									<img class="img-fluid" src="img/loan/arrow-up.png" alt="shape">
+								</div>
+						  </div>
+					  </div>
+					  <div class="col-lg-4">
+						<div class="process-two text-center">
+							<h2>2</h2>
+							<h4>Process</h4>
+							<h3>Clear and transparent
+								<br> process</h3>
+							  <div class="shape">
+								  <img class="img-fluid" src="img/loan/arrow-down.png" alt="shape">
+							  </div>
+						</div>
+					  </div>
+					  <div class="col-lg-4">
+						<div class="process-three text-center">
+							<h2>3</h2>
+							<h4>Support</h4>
+							<h3>Support from real 
+								<br> people</h3>
+						</div>
+					  </div>
+				  </div>
+			  </div>
+		  </section>
+
+<!-- ====================================== how apply-section =========================================== -->
+
+		  <section class="how-apply py-5 my-4">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="apply-left">
+								<h2>How do I apply for a loan</h2>
+								<ul>
+									<li data-pass="1">
+										<h3>Apply in 10 minutes</h3>
+										<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</li>
+									<li data-pass="2">
+										<h3>Hear from us in 1 hour</h3>
+										<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</li>
+									<li data-pass="3">
+										<h3>A decision in 24 hours</h3>
+										<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</li>
+									<li data-pass="4">
+										<h3>Your loan is funded</h3>
+										<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</li>
+									
+								</ul>
+								<div class="loan-sec-button mt-4">
+									<a class="btn btn-danger my-button" href="#">Apply Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 mt-5">
+							<div class="apply-right">
+								<img class="img-fluid" src="img/loan/how-loan.png" alt="photo">
+							</div>
+						</div>
+					</div>
+				</div>
+		  </section>
+
+<!-- ====================================== want-to-check-section =========================================== -->
+
+		  <section class="want-to-check py-5 my-4">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="want-left mb-5">
+								<img class="img-fluid" src="img/loan/check.png" alt="photo">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="want-right">
+								<h2>Want to check your eligibility before you apply?</h2>
+								<p class="text-muted my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+
+								<h2 class="mt-4">Finix payment flexibility for your loan</h2>
+								<p class="text-muted my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+
+								<ul>
+									<li>Fill Loan Application Form</li>
+									<li>Choose your preferred monthly payment</li>
+									<li>ncrease your payment amount anytime</li>
+									<li>No fees, hidden or otherwise</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		  </section>
+
+<!-- ====================================== start up-section =========================================== -->
+
+		  <section class="start-up-section py-5 my-4">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="form-left my-5 pt-4">
+								<div class="form-heading">
+									<h2>Start-up loan Inquiry</h2>
+									<p class="text-muted">Please complete the short form below with your details and one of our advisors will be touch shortly</p>
+								</div>
+								<div class="row">
+									<div class="col-lg-6">
+										<form action="">
+											<label for="name">Your Name*</label>
+											<input type="text" id="name" class="form-control form-control-lg">
+										</form>
+									</div>
+									<div class="col-lg-6">
+										<form action="">
+											<label for="phone">Phone Number*</label>
+											<input type="text" id="phone" class="form-control form-control-lg">
+										</form>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-6">
+										<form action="">
+											<label for="email">Email Address*</label>
+											<input type="text" id="email" class="form-control form-control-lg">
+										</form>
+									</div>
+									<div class="col-lg-6">
+										<form action="">
+											<label for="post">Post Code*</label>
+											<input type="text" id="post" class="form-control form-control-lg">
+										</form>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-6">
+										<form action="">
+											<label for="birth">Date of Birth</label>
+											<input type="text" id="birth" class="form-control form-control-lg">
+										</form>
+									</div>
+									<div class="col-lg-6">
+										<form action="">
+											<label for="address">Address</label>
+											<input type="text" id="address" class="form-control form-control-lg">
+										</form>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-6">
+										<form action="">
+											<label for="city">City</label>
+											<input type="text" id="city" class="form-control form-control-lg">
+										</form>
+									</div>
+									<div class="col-lg-6">
+										<form action="">
+											<label for="how-long">How long have you been trading?</label>
+											<input type="text" id="how-long" class="form-control form-control-lg">
+										</form>
+									</div>
+								</div>
+
+								<div class="loan-submit-btn mt-4">
+									<a class="btn btn-danger my-button" type="submit" href="#">Submit</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- ----------------------------- colored form ---------------------------- -->
+
+						<div class="col-lg-6">
+							<div class="form-right p-5 text-white">
+								<div class="colored-form-heading text-center">
+									<h6>Calculate your rate</h6>
+									<h2>How much do you need?</h2>
+								</div>
+
+								<div class="colored-form">
+									<form action="">
+										<label for="money">Type The Money</label>
+										<input type="text" id="money" class="form-control form-control-lg" placeholder="$1000">
+									</form>
+									<form action="">
+										<label for="month-year">Select The Month/Years</label>
+										<select name="" id="month-year"  class="form-control form-control-lg form-select">
+											<option value="1 M">1 Month</option>
+											<option value="2 M">2 Month</option>
+											<option value="3 M">3 Month</option>
+											<option value="4 M">4 Month</option>
+											<option value="5 M">5 Month</option>
+											<option value="6 M">6 Month</option>
+											<option value="1 Y">1 Year</option>
+											<option value="2 Y">2 Year</option>
+											<option value="3 Y">3 Year</option>
+										</select>
+									</form>
+									<form action="">
+										<label for="borrowing">Borrowing</label>
+										<input type="text" id="borrowing" class="form-control form-control-lg" placeholder="$10000">
+									</form>
+									<form action="">
+										<label for="term">Term of use</label>
+										<input type="text" id="term" class="form-control form-control-lg" placeholder="6 month">
+									</form>
+									<form action="">
+										<label for="total-pay">The total you will pay</label>
+										<input type="text" id="total-pay" class="form-control form-control-lg" placeholder="$11200">
+									</form>
+									<div class="colored-form-btn mt-4">
+										<a class="btn btn-light btn-lg my-button w-100" type="submit" href="#">Apply for this loan</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		  </section>
+
+
+<!-- ====================================== footer-section =========================================== -->
+
+		<section class="footer-section pt-5 pb-4">
+			<div class="container pt-4">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="footer-logo-part">
+							<div class="logo-photo">
+								<img class="img-fluid" src="img/home/logo2.png" alt="logo">
+							</div>
+							<div class="logo-text">
+								<p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+							<div class="logo-icons">
+								<ul class="d-flex">
+									<li>Follow us:</li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="quick-link">
+							<h5>Quick Links</h5>
+							<hr>
+							<ul>
+								<li><a href="about.html">About</a></li>
+								<li><a href="#">Our Performance</a></li>
+								<li><a href="Faq.html">Help (FAQ)</a></li>
+								<li><a href="News.html">Blog</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="other-resources">
+							<h5>Other Resources</h5>
+							<hr>
+							<ul>
+								<li><a href="#">Support</a></li>
+								<li><a href="Privecy-Policy.html">Privacy Policy</a></li>
+								<li><a href="Terms-&-Condition.html">Tarms of Service</a></li>
+								<li><a href="loan.html">Business Loans</a></li>
+								<li><a href="loan.html">Loan Services</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="contact-us">
+							<h5>Contact Us</h5>
+							<hr>
+							<ul>
+								<li class="d-flex">
+									<span><i class="fas fa-map-marker-alt"></i></span>
+									<p>6890 Blvd, The Bronx, NY 1058 New York, USA</p>
+								</li>
+								<li class="d-flex">
+									<span><i class="far fa-envelope"></i></span>
+									<a href="mailto:hello@finix.com">hello@finix.com <br> skype: example</a>
+								</li>
+								<li class="d-flex">
+									<span><i class="far fa-envelope"></i></span>
+									<a href="tel:+1 (514) 312-5678 +1 (514) 312-6688">+1 (514) 312-5678 <br> +1 (514) 312-6688</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<hr class="footer-hr">
+				<div class="copyright text-center pt-3">
+					Coyright &copy; 2021 Finix. Design by <a href="https://www.facebook.com/md.orin.35"> Tipu Sultan</a>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	</body>
+</html>
